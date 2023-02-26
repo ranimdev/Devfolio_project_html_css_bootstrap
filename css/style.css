@@ -1,0 +1,240 @@
+.root{
+    --main-color: #0078ff;
+}
+
+body{
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.6);
+}
+
+header{
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images6/hero-bg.jpg);
+}
+
+.opacty{
+    background-color: rgba(0,0,0,0.6);
+
+}
+
+.header-content h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.header-content h2::after{
+    content: "|";
+    animation-name:moveletters ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveletters {
+    0%{content: "  |";}
+    3%{content: "  F |";}
+    6%{content: "  Fr |";}
+    9%{content: "  Fre |";}
+    12%{content: "  Free |";}
+    15%{content: "  Freel |";}
+    18%{content: "  Freela |";}
+    21%{content: "  Freelan |";}
+    24%{content: "  Freelanc |";}
+    27%{content: "  Freelance |";}
+    30%{content: "  Freelancer |";}
+    33%{content: "  Freelance |";}
+    36%{content: "  Freelanc |";}
+    39%{content: "  Freelan |";}
+    42%{content: "  Freela |";}
+    45%{content: "  Freel |";}
+    48%{content: "  Free |";}
+    51%{content: "  Fre |";}
+    54%{content: "  Fr |";}
+    57%{content: "  F |";}
+    60%{content: "   |";}
+    63%{content: " |";}
+}
+
+
+/* nav */
+.collapse .navbar-nav li a{
+    font-weight: 600;
+}
+
+
+
+/*   s t a r t    a b o u t   s e c t i o n   */
+.title-box-2{
+    position: relative;
+}
+
+.title-left::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    bottom: -5px;
+    background-color: #0078ff; 
+}
+
+.progress .progress-bar {
+    transition: width 0.3 linear;
+}
+/*   e n d    a b o u t   s e c t i o n   */
+
+/*  s t a r t   s e r v i c e s    s e c t i o n  */
+.line-mf{
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0% auto;
+}
+
+.title-box h3{
+    font-size: 3rem;
+}
+
+.icon{
+    width: 6rem;
+    height: 6rem;
+    border-radius:50%;
+    box-shadow: 0 0 0 10px #0078ff;
+}
+
+.icon:hover{
+    background-color: #0078ff;
+    color: white;
+    box-shadow:0 0 0 10px rgba( 0, 0, 200, 0.1);
+    transition: all 10ms;
+}
+
+.service-content p{
+    font-size: 1.1rem;
+}
+
+/*  e n d   s e r v i c e s    s e c t i o n   */
+
+
+/*  s t a r t  c o u n t e r  s e c t i o n*/
+.section-counter{
+    background-image:url(../images6/counters-bg.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    padding: 8rem 0;
+}
+
+.overlay-mf{ 
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+}
+
+.counter-ico{
+  height: 4rem;
+  width: 4rem;
+  box-shadow: 0 0 0 10px #cde1f8;  
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+}
+
+/*  e n d  c o u n t e r  s e c t i o n */
+
+
+/*  s t a r t  w o r k  s e c t i o n   */
+.work-box{
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+.work-img{
+    overflow: hidden;
+}
+.work-box:hover img{
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+
+/*  e n d  w o r k  s e c t i o n   */
+
+
+/*  s t a r t    c a r o u s e l   s e c t i o n  */
+.carousrl-section{
+    background-image: url(../images6/overlay-bg.jpg);
+    position: relative;
+    background-attachment: fixed ;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    padding: 8rem 0;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+/*  e n d    c a r o u s e l   s e c t i o n  */
+
+
+/*  s t a r t     b l o g     s e c t i o n   */
+.card-icon a ,
+.card-body a{
+    text-decoration: none;
+}
+
+.card h6{
+    transform: translateY(-50%);
+}
+
+.avatar{ 
+    width: 17%;
+    height: 17%;
+    margin-right: 4px;
+    overflow: hidden;
+}
+
+/*    e n d     b l o g     s e c t i o n  */
+
+
+/*   s t a r t    c o n t a c t   s e c t i o n */
+.contact-section{
+    background-image: url(../images6/overlay-bg.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    padding: 8rem 0;
+}
+
+/*   e n d    c o n t a c t   s e c t i o n */
+
+form button{
+    border: 0px;
+}
+ul{
+    list-style: none;
+}
+.socials ul{
+    display: flex;
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        text-align: center;
+    }
+}
